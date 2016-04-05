@@ -1,0 +1,13 @@
+﻿{% extends 'layout1.html' %}
+
+{% block main %}
+<body><center>
+    <h2 ALIGN=CENTER>THANK YOU FOR SUBMITTED QUESTION !!!</h2>
+    <h2 ALIGN=CENTER>YOUR QUESTION HAS BEEN MEMORIZED BY MYSQL !!!</h2>
+    <div ALIGN=CENTER><h3>You asked a question : {{ question }} with the title : {{ title }}</h3></div>
+    <a href="question1/{{ title }}"><h3>You can view Your prepared question by clicking here </h3></a>
+    <head><center>
+    <img src="http://davor.smallideafactory.com/static/img/webpics/sql1.jpg">
+    </center></head>
+</center></body>
+{% endblock %}

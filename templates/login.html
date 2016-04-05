@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login for two funduros page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/full-slider.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='bmwfavicon.ico') }}">
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<html>
+  <head>
+    <div class="row text-center"><title>Two Funduros login page</title>
+  </head>
+  <body>
+    <div class="row text-center"><div class="container">
+      </br>
+      </br>
+      <h1>Two Funduros login page</h1>
+      <h3>You must enter "TWO" for username, and "FUNDUROS" for password to enter the site</h3>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+         <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
+</br>
+</br>
+
+
+<iframe src="static/img/gallery/slika8.jpg" width="768" height="432" frameborder="1" scrolling="no"></iframe>
+
+</html>

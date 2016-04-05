@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MAIN PROGRAMM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/davor.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+</br>
+</br>
+<head><center>
+    <img src="http://davor.smallideafactory.com/static/img/webpics/zmija.png">
+    <img src="http://davor.smallideafactory.com/static/img/webpics/pingvin.jpg">
+    <img src="http://davor.smallideafactory.com/static/img/webpics/mongo.png">
+</center></head>
+	<h2><center>Small MONGO DB application by BIGDADDY</center></h2>
+	<h2><center>This aplication use Python as well as Flask,</center></h2>
+	<h2><center>also JINJA templating, CSS and Bootstrap was used</center></h2>
+	<h2><center>Leave Your USERNAME and DESCRIPTION and continue to make DATABASE dictionary</center></h2>
+</div>
+    <center><div class="form-group">
+    <form class="navbar-form navbar-center" action="/new" method="post">
+        <input type="text" class="form-control" placeholder="USERNAME" name="name" />
+         <input type="text" class="form-control" placeholder="DESCRIPTION" name="description" />
+        <button type="submit" class="btn btn-default">Submit</button>
+     </form>
+    </div></center>
+</br>
+</br>
+{% for item in items %}
+{% for item in items %}
+<center><h3><strong><font color="red">{{ item.name }}</font></strong></h3>
+<center><h1><font color="green">{{ item.description }}</font></h1></center>
+<center><h4><font color="blue">The database code for the MONGO DB is: {{ items }}</font></h4></center>
+{% endfor %}
+{% endfor %}
+
+
+<html>

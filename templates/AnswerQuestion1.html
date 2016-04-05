@@ -1,0 +1,18 @@
+﻿{% extends 'layout1.html' %}
+
+{% block main %}
+
+<center><h2>Question: {{ question }}</h2></center>
+<form method="post"><center>
+	<div>
+		<label for="answer">Answer:</label>
+		<input type="text" name="submittedAnswer" />
+	</div>
+	<div>
+		<button type="submit">Submit answer</button>
+	</div>
+</center></form>
+<head><center>
+    <img src="http://davor.smallideafactory.com/static/img/webpics/view.jpg">
+    </center></head>
+{% endblock %}
